@@ -1,28 +1,73 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar app color="primary" dark>
+      <div class="d-flex align-center">Projects</div>
+
+      <v-spacer></v-spacer>
+
+      <v-btn href="https://github.com/buracc" text>
+        <span class="mr-2">buracc</span>
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-main>
+      <v-row style="padding: 1%">
+        <v-col md="3" v-for="(p, i) in projects" :key="i">
+          <ProjectCard :project="p"></ProjectCard>
+        </v-col>
+      </v-row>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ProjectCard from '@/components/ProjectCard'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { ProjectCard },
+  data: () => ({
+    projects: [
+      {
+        title: 'botlin',
+        stack: 'Java, Kotlin, Gradle',
+        category: 'Games, Runescape',
+        text: 'A customized, lightweight RuneScape (OpenOSRS) client, with a scripting API written in Kotlin.',
+        link: 'https://github.com/buracc/botlin',
+      },
+      {
+        title: 'botlin-scripts',
+        stack: 'Kotlin, Gradle',
+        category: 'Games, Runescape',
+        text: 'Automation scripts to use with the botlin client.',
+        link: 'https://github.com/buracc/botlin-scripts',
+      },
+      {
+        title: 'SimpleCL',
+        stack: 'C#',
+        category: 'Games, Silkroad Online',
+        text: 'A lightweight client(less) packet framework for Silkroad Online.',
+        link: 'https://github.com/buracc/SimpleCL',
+      },
+      {
+        title: 'ov-app',
+        stack: 'Kotlin, Gradle',
+        category: 'Travel',
+        text: 'A public transport trip planner Android app using the Dutch NS public transport API. Inspired by 9292-OV.',
+        link: 'https://github.com/buracc/ov-app',
+      },
+      {
+        title: 'Hexagon',
+        stack: 'Java EE, Maven, Javascript, TypeScript Angular, Ionic Framework, Socket.IO',
+        category: 'Entertainment',
+        text:
+          'A prototype project created for the Amsterdam Arena during my internship at MediaLAB Amsterdam. ' +
+          'Hexagon is an e-sports match predicting game (similar to sports betting/predicting), but without the' +
+          'gambling aspects.',
+        link: 'https://github.com/buracc/Hexagon',
+      },
+    ],
+  }),
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
