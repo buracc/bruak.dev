@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="tertiary" dark>
       <div class="d-flex align-center">Projects</div>
 
       <v-spacer></v-spacer>
 
       <v-btn href="https://github.com/buracc" text>
-        <span class="mr-2">buracc</span>
+        <span class="mr-2">github.com/buracc</span>
         <v-icon>mdi-github</v-icon>
       </v-btn>
     </v-app-bar>
