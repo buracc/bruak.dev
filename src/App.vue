@@ -44,8 +44,15 @@ export default {
         link: 'https://github.com/buracc/botlin-scripts',
       },
       {
+        title: 'botlin-pathfinder',
+        stack: 'Java, Kotlin, Spring Boot, Gradle',
+        category: 'Games, Runescape',
+        text: 'A pathfinding REST-API for RuneScape. Consumes two game coordinates and returns a tile path between the two locations.',
+        link: 'https://api.bruak.dev/pathfinder',
+      },
+      {
         title: 'SimpleCL',
-        stack: 'C#',
+        stack: '.NET, C#',
         category: 'Games, Silkroad Online',
         text: 'A lightweight client(less) packet framework for Silkroad Online.',
         link: 'https://github.com/buracc/SimpleCL',
