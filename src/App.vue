@@ -71,7 +71,7 @@ export default {
         text:
           'A prototype project created for the Amsterdam Arena during my internship at MediaLAB Amsterdam. ' +
           'Hexagon is an e-sports match predicting game (similar to sports betting/predicting), but without the' +
-          'gambling aspects.',
+          ' gambling aspects.',
         link: 'https://github.com/buracc/Hexagon',
       },
     ],
