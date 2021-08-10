@@ -30,6 +30,13 @@ export default {
   data: () => ({
     projects: [
       {
+        title: 'ov-app',
+        stack: 'Android, Kotlin, Gradle',
+        category: 'Travel',
+        text: 'A public transport trip planner Android app using the Dutch NS public transport API. Inspired by 9292-OV.',
+        link: 'https://github.com/buracc/ov-app',
+      },
+      {
         title: 'botlin',
         stack: 'Java, Kotlin, Gradle',
         category: 'Games, Runescape',
@@ -56,13 +63,6 @@ export default {
         category: 'Games, Silkroad Online',
         text: 'A lightweight client(less) packet framework for Silkroad Online.',
         link: 'https://github.com/buracc/SimpleCL',
-      },
-      {
-        title: 'ov-app',
-        stack: 'Kotlin, Gradle',
-        category: 'Travel',
-        text: 'A public transport trip planner Android app using the Dutch NS public transport API. Inspired by 9292-OV.',
-        link: 'https://github.com/buracc/ov-app',
       },
       {
         title: 'Hexagon',
